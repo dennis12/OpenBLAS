@@ -4,18 +4,16 @@ include $(TOPDIR)/Makefile.system
 endif
 
 ifndef LASWP
-LASWP	= ../generic/laswp_k.c
+LASWP	= ../generic/laswp.c
 endif
 
 ifndef ZLASWP
-ZLASWP	= ../generic/zlaswp_k.c
+ZLASWP	= ../generic/zlaswp.c
 endif
 
-LASWP_DEPS  = ../generic/laswp_k_1.c ../generic/laswp_k_2.c \
-	      ../generic/laswp_k_4.c ../generic/laswp_k_8.c 
+LASWP_DEPS  =
 
-ZLASWP_DEPS = ../generic/zlaswp_k_1.c ../generic/zlaswp_k_2.c \
-	      ../generic/zlaswp_k_4.c
+ZLASWP_DEPS = 
 
 include ../../../Makefile.tail
 
